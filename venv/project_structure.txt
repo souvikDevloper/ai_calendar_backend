@@ -1,0 +1,22 @@
+ai_calendar_backend/
+│── migrations/               # Alembic migration files (database migrations)
+│── models/                   # All database models
+│   ├── user.py               # User authentication models
+│   ├── event.py              # Event scheduling models
+│── routes/                   # API route handlers
+│   ├── auth.py               # User authentication endpoints
+│   ├── events.py             # CRUD operations for events
+│   ├── scheduling.py         # AI-powered smart scheduling API
+│── services/                 # Business logic and database interactions
+│   ├── database.py           # Database connection (PostgreSQL/SQLite)
+│   ├── redis_cache.py        # Redis caching logic
+│   ├── scheduler.py          # AI-based scheduling (ML model)
+│── schemas/                  # Pydantic models for request validation
+│   ├── user.py               # User schemas (login, registration)
+│   ├── event.py              # Event schemas
+│── config.py                 # App settings and environment variables
+│── main.py                   # FastAPI entry point
+│── requirements.txt          # Python dependencies
+│── alembic.ini               # Alembic migration config
+│── .env                      # Environment variables (SECRET_KEY, DB_URL)
+│── README.md                 # Project documentation
